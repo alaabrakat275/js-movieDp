@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <!-- Page Style Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Start search --> 
+
+
+
+
+
+<div class="sidebar">
+    <ul class="p-5">
+        <li><a href="#" class="nav-link item1">now_playing</a></li>
+        <li><a href="#" class="nav-link item2">popular</a></li>
+        <li><a href="#" class="nav-link item3">top_rated</a></li>
+        <li><a href="#" class="nav-link item4">latest</a></li>
+        <li><a href="#" class="nav-link item5">upcoming</a></li>
+        <li><a href="#contact" class="nav-link item6">Contact Us</a></li>
+    </ul>
+    <div class="nav-social-item mt-5 ">
+        <div class="d-flex ps-4 ">
+            <a href="#"><i class=" ps-4 fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter ps-4"></i></a>
+        <a href="#"><i class="fas fa-globe ps-4"></i></a>
+        </div>
+        
+        <div class="pt-3 text-white ps-3 ">
+          <span>Copyright © 2019 All Rights Reserved.</span>
+        </div>
+        
+      </div>
+     
+      <div class="Btoon">
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+        <div class="strip-logo">
+            <img src="images/logo.png">
+          </div>
+          <div class="strip-social-icon">
+            <div class="strip-lang">
+              <span>
+                <i class="fas fa-globe text-black"></i>
+              </span>
+            </div>
+            <div class="strip-share text-black">
+                <span>
+                    <i class="fas fa-share-alt"></i>
+                </span>
+              </div>
+          </div>
+    </div>
+</div> 
+
+
+
+
+  
+
+
+
+
+<section id="Home">
+     <div class="w-75 container w-75 my-5 ">
+     <div class="row">
+        <div class="col-md-6  ">
+            <input onkeyup="search(this.value)" id="search"  type="text" placeholder="get movies by word..."  class="search w-100  text-center form-control ">
+        </div>
+        <div class="col-md-6 ">
+            <input  type="text" id="apiSearch" placeholder="search... "class="search w-100 text-center form-control">
+        </div>
+     </div>
+     </div>
+</section>
+<!-- End search -->
+
+<!-- /********* Start Display Temp *********/  -->
+<section  >
+<div class="container w-75 mx-auto  py-5  ">
+    <div class="row gy-4  text-center " id="rowData">
+
+    </div>
+</div>
+</section>
+<!-- /********* End Display Temp *********/  -->
+
+
+
+
+
+<!-- /*********  Start contacts section *********/  --> 
+<section id="contact" class="container myM w-75 mx-auto my-5 ">  
+    <h2 class="text-light my-5">ContacUs...</h2>
+    <div class="row">
+      <div class="col-md-6">
+    <div class="form-group pb-3">
+      <input class="form-control " required id="name" placeholder="Enter Your Name">
+        <div class="alert alert-danger " id="namealert" role="alert">
+          Your Name is not valid
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group pb-3">
+        <input class="form-control" required id="email" placeholder="Enter Email">
+      <div class="alert alert-danger" id="emailalert" role="alert">
+        entre valid email
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group pb-3">
+      <input  class="form-control" id="phone" placeholder="Enter phone">
+      <div class="alert alert-danger" id="phonealert" role="alert">
+        entre valid phone
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <input  class="form-control" id="age" placeholder="Enter Age">
+      <div class="alert alert-danger" id="agealert" role="alert">
+        entre valid Age
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <input  class="form-control" type="password"  id="password" placeholder="Enter Password">
+      <div class="alert alert-danger " id="passwordalert" role="alert">
+        entre valid password Minimum eight characters, at least one letter and one number:
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <input  class="form-control" type="password"  id="rePassword" placeholder="Enter rePassword">
+      <div class="alert alert-danger" id="repasswordalert" role="alert">
+        entre valid Repassword
+      </div>
+    </div>
+  </div>
+
+
+  </div>  
+    
+    <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger mt-3">Submit</button>
+
+  </section>
+
+
+<!-- /*********  End contacts section *********/  -->   
+               
+
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>
